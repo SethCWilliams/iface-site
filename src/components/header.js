@@ -17,7 +17,7 @@ const Header = ({ siteTitle }) => (
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      
         <Link
           to="/"
           style={{
@@ -25,12 +25,10 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
+        <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+        <Image />
+      </div>
         </Link>
-      </h1>
-      <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
     </div>
   </header>
 )
